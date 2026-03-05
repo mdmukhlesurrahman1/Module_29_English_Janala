@@ -31,7 +31,7 @@
 </head>
 
 <body class="bg-base-100">
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-50">
         <div class="navbar bg-[#d4f3ff] shadow-md">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -44,8 +44,8 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-md dropdown-content bg-[#d4f3ff] rounded-box z-50 mt-3 w-35 sm:w-52 p-2 shadow space-y-2">
-                        <li><a href="" class="btn btn-outline btn-primary">FAQ</a></li>
-                        <li><a href="" class="btn btn-outline btn-primary">Learn</a></li>
+                        <li><a href="#faq" class="btn btn-outline btn-primary">FAQ</a></li>
+                        <li><a href="#learn" class="btn btn-outline btn-primary">Learn</a></li>
                         <li><a href="" class="btn btn-outline btn-primary">Logout</a></li>
                     </ul>
                 </div>
@@ -57,13 +57,13 @@
             </div>
             <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal gap-4">
-                    <a href="#">
+                    <a href="#faq">
                         <li class="flex flex-row btn btn-outline btn-primary">
                             <i class="fa-solid fa-circle-question pointer-events-none"></i>
                             <span class="pointer-events-none">FAQ</span>
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="#learn">
                         <li class="flex flex-row btn btn-outline btn-primary">
                             <i class="fa-solid fa-book-open pointer-events-none"></i>
                             <span class="pointer-events-none">Learn</span>
@@ -81,21 +81,21 @@
     </header>
 
     <section id="banner"
-        class="w-11/12 mx-auto flex flex-col-reverse lg:flex-row gap-5 justify-between items-center mb-10">
+        class="w-11/12 mx-auto flex flex-col-reverse md:flex-row gap-5 justify-between items-center mb-30">
 
-        <div class="content flex-1 space-y-6 text-center lg:text-left">
+        <div class="content flex-1 space-y-6 text-center md:text-left">
             <h2 class="font-extrabold text-3xl"><span class="text-info">English</span> is Easy!!</h2>
-            <p class="font-bangla font-medium opacity-80 text-lg w-11/12">
+            <p class="font-bangla font-medium text-lg w-11/12">
                 আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি
                 নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
                 Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
 
-            <fieldset class="fieldset bg-[#d4f3ff] border-info/10 rounded-box w-xs border p-5 shadow-sm mx-auto lg:mx-0">
+            <fieldset class="fieldset bg-[#d4f3ff] border-[#d4f3ff] rounded-box w-xs p-5 shadow-sm mx-auto md:mx-0">
                 <label class="label">Name</label>
                 <input type="email" class="input" placeholder="Enter Your Name" />
 
                 <label class="label">Password</label>
-                <input type="password" class="input" placeholder="Password" />
+                <input type="password" class="input overflow-hidden!imporlent" placeholder="Password" />
 
                 <button class="btn btn-primary mt-4">Get Started</button>
             </fieldset>
@@ -106,6 +106,37 @@
         </div>
 
     </section>
+
+    <section id="learn" class="w-11/12 mx-auto border mb-30 text-center">
+        <h2 class="font-bold text-xl"><span class="text-info">Let's</span> Learn Vocabularies</h2>
+
+    </section>
+
+    <section id="faq" class="w-11/12 mx-auto border mb-30 text-center">
+        <h2 class="font-bold text-xl"><span class="text-info">Frequently</span> Asked Questions</h2>
+
+    </section>
+
+    <footer class="bg-[#d4f3ff]">
+        <hr class="h-0.5 bg-info/30 border-0">
+        <div class="foot-container w-11/12 mx-auto py-10 md:py-25 flex flex-col gap-5 md:items-end md:flex-row justify-between">
+            <div class="company-info">
+                <div class="flex items-center gap-1 font-semibold text-xl">
+                    <span>English</span>
+                    <img src="assets/logo.png" alt="">
+                    <span class="font-bangla">জানালা</span>
+                </div>
+                <p class="font-bangla text-md md:text-lg">ইংরেজি শিখুন সহজে</p>
+                <p class="text-xs md:text-md">Providing MR-Tech Applications since 2026</p>
+            </div>
+            <div class="social flex gap-3 items-center">
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/fb-thumb.png" alt=""></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="assets/youtube-thumb.png" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/instagram-thumb.png" alt=""></a>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

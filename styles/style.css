@@ -2,12 +2,20 @@
     font-family: "Poppins", sans-serif;
 }
 
+.font-bangla {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-.font-bangla {
-    font-family: "Hind Siliguri", sans-serif;
+#learn{
+    scroll-margin-top: 80px;
+}
+
+#faq{
+    scroll-margin-top: 80px;
 }
 
 @import "tailwindcss"
