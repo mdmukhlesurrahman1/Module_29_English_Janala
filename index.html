@@ -30,8 +30,82 @@
 
 </head>
 
-<body>
-    <h1>English Janala is Cooking....</h1>
+<body class="bg-base-100">
+    <header class="sticky top-0">
+        <div class="navbar bg-[#d4f3ff] shadow-md">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-primary btn-outline lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-md dropdown-content bg-[#d4f3ff] rounded-box z-50 mt-3 w-35 sm:w-52 p-2 shadow space-y-2">
+                        <li><a href="" class="btn btn-outline btn-primary">FAQ</a></li>
+                        <li><a href="" class="btn btn-outline btn-primary">Learn</a></li>
+                        <li><a href="" class="btn btn-outline btn-primary">Logout</a></li>
+                    </ul>
+                </div>
+                <div id="logo" class="flex items-center gap-2 pl-2 font-semibold text-xl">
+                    <span>English</span>
+                    <img src="assets/logo.png" alt="">
+                    <span class="font-bangla">জানালা</span>
+                </div>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal gap-4">
+                    <a href="#">
+                        <li class="flex flex-row btn btn-outline btn-primary">
+                            <i class="fa-solid fa-circle-question pointer-events-none"></i>
+                            <span class="pointer-events-none">FAQ</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row btn btn-outline btn-primary">
+                            <i class="fa-solid fa-book-open pointer-events-none"></i>
+                            <span class="pointer-events-none">Learn</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="flex flex-row btn btn-outline btn-primary">
+                            <i class="fa-solid fa-arrow-right-from-bracket pointer-events-none"></i>
+                            <span class="pointer-events-none">Logout</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner"
+        class="w-11/12 mx-auto flex flex-col-reverse lg:flex-row gap-5 justify-between items-center mb-10">
+
+        <div class="content flex-1 space-y-6 text-center lg:text-left">
+            <h2 class="font-extrabold text-3xl"><span class="text-info">English</span> is Easy!!</h2>
+            <p class="font-bangla font-medium opacity-80 text-lg w-11/12">
+                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি
+                নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
+            <fieldset class="fieldset bg-[#d4f3ff] border-info/10 rounded-box w-xs border p-5 shadow-sm mx-auto lg:mx-0">
+                <label class="label">Name</label>
+                <input type="email" class="input" placeholder="Enter Your Name" />
+
+                <label class="label">Password</label>
+                <input type="password" class="input" placeholder="Password" />
+
+                <button class="btn btn-primary mt-4">Get Started</button>
+            </fieldset>
+
+        </div>
+        <div class="image flex-1">
+            <img src="assets/hero-student.png" alt="hero-image">
+        </div>
+
+    </section>
 </body>
 
 </html>
