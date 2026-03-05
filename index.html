@@ -107,8 +107,16 @@
 
     </section>
 
-    <section id="learn" class="w-11/12 mx-auto border mb-30 text-center">
-        <h2 class="font-bold text-xl"><span class="text-info">Let's</span> Learn Vocabularies</h2>
+    <section id="learn" class="w-11/12 mx-auto mb-30 text-center">
+        <h2 class="font-bold text-xl mb-8"><span class="text-info">Let's</span> Learn Vocabularies</h2>
+        <div id="all-lesson" class="flex gap-2 justify-center flex-wrap mb-8">
+            <!-- Lessons Button Here -->
+        </div>
+
+        <div id="word-container" class="bg-base-300 p-5 rounded-md grid grid-cols-3 gap-5">
+            <!-- Every Lessons Word -->
+             
+        </div>
 
     </section>
 
@@ -119,24 +127,33 @@
 
     <footer class="bg-[#d4f3ff]">
         <hr class="h-0.5 bg-info/30 border-0">
-        <div class="foot-container w-11/12 mx-auto py-10 md:py-25 flex flex-col gap-5 md:items-end md:flex-row justify-between">
-            <div class="company-info">
-                <div class="flex items-center gap-1 font-semibold text-xl">
-                    <span>English</span>
-                    <img src="assets/logo.png" alt="">
-                    <span class="font-bangla">জানালা</span>
+
+        <div
+            class="w-11/12 mx-auto py-10 md:py-25 flex flex-col md:flex-row items-center md:items-end justify-center md:justify-between gap-5">
+
+            <!-- Company Info Section -->
+            <div class="company-info flex flex-col items-center text-center md:items-start">
+                <div class="flex gap-1 font-semibold text-xl items-center">
+                    <p>English</p>
+                    <img src="assets/logo.png" alt="Logo" class="h-8">
+                    <p class="font-bangla">জানালা</p>
                 </div>
                 <p class="font-bangla text-md md:text-lg">ইংরেজি শিখুন সহজে</p>
                 <p class="text-xs md:text-md">Providing MR-Tech Applications since 2026</p>
             </div>
-            <div class="social flex gap-3 items-center">
-                <a href="https://www.facebook.com" target="_blank"><img src="assets/fb-thumb.png" alt=""></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="assets/youtube-thumb.png" alt=""></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assets/instagram-thumb.png" alt=""></a>
-            </div>
-        </div>
 
+            <!-- Social Media Icons -->
+            <div class="social flex gap-3 items-center justify-center">
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/fb-thumb.png" alt="FB"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="assets/youtube-thumb.png" alt="YT"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/instagram-thumb.png" alt="IG"></a>
+            </div>
+
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
